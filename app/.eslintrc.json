@@ -1,0 +1,30 @@
+{
+  "env": { "browser": true, "es2021": true },
+  "settings": { "svelte/typescript": true },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "tsconfigRootDir": ".",
+    "extraFileExtensions": [".svelte"],
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["svelte3", "@typescript-eslint", "prettier"],
+  "ignorePatterns": ["node_modules"],
+  "overrides": [{
+    "files": ["*.svelte"],
+    "processor": "svelte3/svelte3"
+  }],
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "prettier/prettier": "error"
+  }
+}
