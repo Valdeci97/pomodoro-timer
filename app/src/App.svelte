@@ -1,3 +1,5 @@
-<main>
-  <h1>Hello world!</h1>
-</main>
+<script lang="ts">
+  import Cronodoro from './pages/Cronodoro.svelte';
+</script>
+
+<Cronodoro />
