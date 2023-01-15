@@ -138,7 +138,7 @@
     overflow-y: auto;
     position: absolute;
     right: 0;
-    width: 40%;
+    width: 60%;
     z-index: 1;
   }
 
@@ -249,5 +249,134 @@
 
   .btn:hover {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .form-container {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .close-config-btn {
+      font-size: 1rem;
+    }
+
+    .timer-title {
+      font-size: 1.25rem;
+    }
+
+    .timer-config-label {
+      font-size: 0.75rem;
+    }
+
+    .timer-config-input {
+      font-size: 0.7rem;
+      width: 50%;
+    }
+
+    .each {
+      height: 75%;
+    }
+
+    .btn {
+      font-size: 1.5rem;
+      padding: 0.25rem;
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 440px) {
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .close-config-btn {
+      font-size: 1rem;
+    }
+
+    .timer-title {
+      font-size: 1.25rem;
+    }
+
+    .timer-config-label {
+      font-size: 0.8rem;
+    }
+
+    .timer-config-input {
+      font-size: 0.75rem;
+      width: 50%;
+    }
+
+    .each {
+      height: 75%;
+      width: 100%;
+    }
+
+    .btn {
+      font-size: 1.5rem;
+      padding: 0.25rem;
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 441px) and (max-width: 540px) {
+    .timer-config-label {
+      font-size: 1rem;
+    }
+
+    .timer-config-input {
+      width: 50%;
+    }
+
+    .btn {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 541px) and (max-width: 640px) {
+    .timer-config-label {
+      font-size: 1rem;
+    }
+
+    .timer-config-input {
+      width: 50%;
+    }
+
+    .btn {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 641px) and (max-width: 740px) {
+    .timer-config-label {
+      font-size: 1rem;
+    }
+
+    .timer-config-input {
+      width: 50%;
+    }
+
+    .btn {
+      width: 40%;
+    }
+  }
+
+  @media screen and (min-width: 741px) and (max-width: 1000px) {
+    .timer-config-label {
+      font-size: 1rem;
+    }
+
+    .timer-config-input {
+      width: 50%;
+    }
+
+    .btn {
+      width: 40%;
+    }
   }
 </style>

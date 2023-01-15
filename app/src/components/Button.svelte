@@ -32,4 +32,16 @@
   .timer-control-btn:hover {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 320px) {
+    .timer-control-btn {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 440px) {
+    .timer-control-btn {
+      width: 50%;
+    }
+  }
 </style>

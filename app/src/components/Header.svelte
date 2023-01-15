@@ -4,8 +4,6 @@
   let showConfig = false;
 
   function setBodyBackgroundColor(): void {
-    // const [body] = document.getElementsByTagName('body');
-    // body.style.backgroundColor = 'green';
     showConfig = true;
   }
 
@@ -73,5 +71,47 @@
   .setting-emoji {
     font-size: 1.5rem;
     margin-left: 0.25rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    .title {
+      font-size: 0.75rem;
+    }
+
+    .setting-btn {
+      font-size: 0.75rem;
+    }
+
+    .setting-emoji {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 440px) {
+    .title {
+      font-size: 0.8rem;
+    }
+
+    .setting-btn {
+      font-size: 0.8rem;
+    }
+
+    .setting-emoji {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 441px) and (max-width: 540px) {
+    .title {
+      font-size: 0.9rem;
+    }
+
+    .setting-btn {
+      font-size: 0.9rem;
+    }
+
+    .setting-emoji {
+      font-size: 1.1rem;
+    }
   }
 </style>

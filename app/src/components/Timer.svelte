@@ -48,49 +48,49 @@
 </script>
 
 <div class="timer-settings-container">
-    <div class="timer-settings">
-      <div class="btn-container">
-        <button
-          type="button"
-          on:click={(event) => handleTimerValue(pomodoroTime, event, POMODORO)}
-          class="timer-settings-btn selected"
-          id="pomodoro"
-        >
-          Pomodoro
-        </button>
-        <button
-          type="button"
-          on:click={(event) => handleTimerValue(shortBreakTime, event, SHORT_BREAK)}
-          class="timer-settings-btn"
-          id="short-break"
-        >
-          Intervalo curto
-        </button>
-        <button
-          type="button"
-          on:click={(event) => handleTimerValue(longBreakTime, event, LONG_BREAK)}
-          class="timer-settings-btn"
-          id="long-break"
-        >
-          Intervalo longo
-        </button>
-      </div>
-      <div class="timer">
-        <span>{ selectedTime }</span>
-      </div>
-      {#if stopCountdown}
-        <Button text={'Pausar'} handleTimer={stopTimer} key={backgroundKey} />
-      {/if}
-      {#if !stopCountdown}
-        <Button text={'Iniciar'} handleTimer={startTimer} key={backgroundKey} />
-      {/if}
+  <div class="timer-settings">
+    <div class="btn-container">
+      <button
+        type="button"
+        on:click={(event) => handleTimerValue(pomodoroTime, event, POMODORO)}
+        class="timer-settings-btn selected"
+        id="pomodoro"
+      >
+        Pomodoro
+      </button>
+      <button
+        type="button"
+        on:click={(event) => handleTimerValue(shortBreakTime, event, SHORT_BREAK)}
+        class="timer-settings-btn"
+        id="short-break"
+      >
+        Intervalo curto
+      </button>
+      <button
+        type="button"
+        on:click={(event) => handleTimerValue(longBreakTime, event, LONG_BREAK)}
+        class="timer-settings-btn"
+        id="long-break"
+      >
+        Intervalo longo
+      </button>
+    </div>
+    <div class="timer">
+      <span>{ selectedTime }</span>
+    </div>
+    {#if stopCountdown}
+      <Button text={'Pausar'} handleTimer={stopTimer} key={backgroundKey} />
+    {/if}
+    {#if !stopCountdown}
+      <Button text={'Iniciar'} handleTimer={startTimer} key={backgroundKey} />
+    {/if}
   </div>
 </div>
 
 <style>
   .timer-settings-container {
     display: flex;
-    height: 55%;
+    height: 70%;
     justify-content: center;
     width: 100%;
   }
@@ -102,7 +102,7 @@
     border-radius: 0.25rem;
     display: flex;
     flex-direction: column;
-    height: 95%;
+    height: 75%;
     width: 35%;
   }
 
@@ -143,5 +143,77 @@
     align-self: center;
     color: #fff;
     font-size: 8rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    .timer-settings-container {
+      height: 80%;
+    }
+
+    .timer-settings {
+      width: 90%;
+    }
+
+    .timer-settings-btn {
+      font-size: 0.75rem;
+    }
+
+    .timer {
+      font-size: 5rem;
+    }
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 440px) {
+    .timer-settings-container {
+      height: 70%;
+    }
+
+    .timer-settings {
+      width: 90%;
+    }
+
+    .timer-settings-btn {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (min-width: 441px) and (max-width: 540px) {
+    .timer-settings-container {
+      height: 70%;
+    }
+
+    .timer-settings {
+      width: 90%;
+    }
+  }
+
+  @media screen and (min-width: 541px) and (max-width: 640px) {
+    .timer-settings-container {
+      height: 70%;
+    }
+
+    .timer-settings {
+      width: 90%;
+    }
+  }
+
+  @media screen and (min-width: 641px) and (max-width: 740px) {
+    .timer-settings-container {
+      height: 70%;
+    }
+
+    .timer-settings {
+      width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 741px) and (max-width: 1000px) {
+    .timer-settings-container {
+      height: 70%;
+    }
+
+    .timer-settings {
+      width: 60%;
+    }
   }
 </style>
