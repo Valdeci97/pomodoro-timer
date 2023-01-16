@@ -1,6 +1,6 @@
 # <div align="center">Cronodoro</div>
 
-<div align="center">Web App para ajudar com o foco em tarefas do dia a dia</div>
+Web App para ajudar com o foco em tarefas do dia a dia, através da técnica de ciclos temporais pomodoro. [deploy](https://cronodoro.netlify.app/)
 
 ## <div align="center">Tecnologias</div>
 
